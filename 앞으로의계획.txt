@@ -1,0 +1,12 @@
+
+1. 함수 (일반함수, 리턴함수)
+2. Object(객체) 다루는 것
+3. classList
+4. addEventListener (click, scroll)
+5. index 개념
+6. index 응용, 버튼만들기, 배너변경(fadeIn-Out)
+7. JSON, 반복문 혼합 => 출력 => innerHTML
+8. 콜백함수, async, await
+
+*가상돔 Virtual DOM (Vue, React)
+innerHTML
