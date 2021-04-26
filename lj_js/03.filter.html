@@ -1,0 +1,14 @@
+<script>
+	var friend = ['티모', '아무무', '타릭'];
+	var group = [];
+
+	for (var i in friend) {
+		if (friend[i] !== '아무무') {
+			group.push(friend[i]);
+		}
+	}
+
+	var group2 = friend.filter(item => item !== '아무무');
+
+	console.log(group2);
+</script>

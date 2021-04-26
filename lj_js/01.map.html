@@ -1,0 +1,24 @@
+<script>
+	// 문제: for문을 이용해서 다음의 배열에서 철수를 영수로 바꿔보세요.
+	var arr = ['경수', '명수', '철수'];
+
+	var arr1 = [];
+
+	for (var i in arr) {
+		if (arr[i] === '철수') {
+			arr1.push('영수');
+		} else {
+			arr1.push(arr[i]);
+		}
+	}
+
+	var arr2 = arr.map(item => {
+		if (item === '철수') {
+			return '영수';
+		} else {
+			return item;
+		}
+	});
+	console.log(arr2);
+	
+</script>

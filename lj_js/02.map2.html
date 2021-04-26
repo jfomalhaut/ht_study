@@ -1,0 +1,21 @@
+<script>
+	var items = [
+		{ id: 1, name: 'apple', price: 1000 },
+		{ id: 2, name: 'banana', price: 2000 },
+		{ id: 3, name: 'orange', price: 3000 },
+		{ id: 4, name: 'kiwi', price: 4000 },
+	];
+
+	// map을 써서 orange의 가격을 5500원으로 만들어보세요.
+
+	var newItems = items.map(item => {
+		if (item.name === 'orange') {
+			return { ...item, price: 5500 };
+		} else {
+			return item;
+		}
+	});
+
+	console.log(newItems);
+
+</script>
