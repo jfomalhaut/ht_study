@@ -1,0 +1,40 @@
+<html>
+<head>
+	<style>
+		#box{
+			width: 500px;
+			height: 500px;
+			background: dodgerblue;
+		}
+		button {
+			font-size: 50px;
+		}
+
+		.red {
+			width: 300px !important;
+			height: 300px !important;
+			background: tomato !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<button id="confirm">확인</button>
+	<script>
+		var box = document.querySelector('#box');
+		var confirm = document.querySelector('#confirm');
+
+		function onMouseEnterHandler() {
+			box.classList.add('red');
+		}
+
+		function onMouseLeaveHandler() {
+			box.classList.remove('red');
+		}
+
+		box.addEventListener('mouseenter', onMouseEnterHandler);
+		box.addEventListener('mouseleave', onMouseLeaveHandler);
+
+	</script>
+</body>
+</html>
