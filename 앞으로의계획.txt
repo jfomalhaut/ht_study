@@ -6,7 +6,7 @@
 [ ] 5. index 개념
 [ ] 6. index 응용, 버튼만들기, 배너변경(fadeIn-Out)
 [ ] 7. JSON, 반복문 혼합 => 출력 => innerHTML
-[ ] 8. 콜백함수, async, await
+[ ] 8. 콜백함수, async, await (react 때)
 
 *가상돔 Virtual DOM (Vue, React)
 innerHTML
@@ -18,3 +18,11 @@ map(수정), filter(삭제), concat(추가)
 [2일차]
 함수, 리턴함수, addEventListener(click/scroll)
 classList add / remove
+
+[숙제]
+원 세개를 만들고,
+버튼마다 클릭을 하면 불이 들어오게 만들어 보세요.
+그런데, 불이 켜진 것을 누르면 꺼집니다.
+그리고 불이 켜지지 않은 것을 누르면 불이 켜진 원의 불이 꺼집니다.
+
+[3일차]
