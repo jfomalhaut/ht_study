@@ -1,0 +1,58 @@
+<html>
+<head>
+	<style>
+		article {
+			width: 800px;
+			margin: 50px auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.circle {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #bbb;
+			cursor: pointer;
+		}
+
+		.active {
+			background-color: dodgerblue;
+		}
+
+	</style>
+</head>
+<body>
+	<article>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+	</article>
+	<script>
+		var circles = document.querySelectorAll('.circle');
+		var active = -1;
+
+		function onClickCircle(i) {
+			if (active === i) {
+				circles[i].classList.remove('active');
+				active = -1;
+			} else {
+				// active가 -1이면 아무것도 선택이 되지 않은 상태
+				if (active !== -1) {
+					// 이미 선택된 원이 있으면 해당 원에 들어간 active를 제거해준다.
+					circles[active].classList.remove('active');
+				}
+				active = i;
+				circles[i].classList.add('active');
+			}
+		}
+
+		circles.forEach((element, index) => {
+			element.addEventListener('click', () => {
+				onClickCircle(index);
+			});
+		});
+	</script>
+</body>
+</html>
