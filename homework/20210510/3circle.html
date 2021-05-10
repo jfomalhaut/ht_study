@@ -53,17 +53,22 @@
 
     function onButton1Click() {
         if (!cir1.classList.contains("active")) {
+            cir1.classList.add('active');
             cir2.classList.remove('active');
             cir3.classList.remove('active');
-        }         cir1.classList.add('active');
+        }   else {     
+            cir1.classList.remove('active');
+        }     
     }
 
 
     function onButton2Click() {
         if (!cir2.classList.contains("active")) {
             cir1.classList.remove('active');
+            cir2.classList.add('active');
             cir3.classList.remove('active');
-        } cir2.classList.add('active');
+        } else {
+            cir2.classList.add('active'); }
         }
     
 
@@ -71,7 +76,9 @@
         if (!cir3.classList.contains("active")) {
             cir2.classList.remove('active');
             cir1.classList.remove('active');
-        } cir3.classList.add('active');
+            cir3.classList.add('active'); 
+        } else {
+            cir3.classList.add('active'); }
         }
     
 
