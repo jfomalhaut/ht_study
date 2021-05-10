@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Circle</title>
+    <style>
+
+  .container {display: flex;}    
+
+
+    .circle {
+      width: 500px;
+      height: 500px;
+      -webkit-border-radius: 250px;
+      -moz-border-radius: 250px;
+      border-radius: 250px;
+      background: white;
+    }
+
+    .active {
+        background: yellow !important;
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+<!-- 
+    [숙제]
+원 세개를 만들고,
+버튼마다 클릭을 하면 불이 들어오게 만들어 보세요.
+그런데, 불이 켜진 것을 누르면 꺼집니다.
+그리고 불이 켜지지 않은 것을 누르면 불이 켜진 원의 불이 꺼집니다.
+-->
+
+<section class="container">
+    <button class="circle circle1">Circle1</button>
+    <button class="circle circle2">Circle2</button>
+    <button class="circle circle3">Circle3</button>
+</section>
+
+<script>
+    let cir1 = document.querySelector('.circle1')
+    let cir2 = document.querySelector('.circle2')
+    let cir3 = document.querySelector('.circle3')
+    // let allCircle = document.querySelectorAll('.circle');
+
+    cir1.addEventListener('click', onButton1Click);
+    cir2.addEventListener('click', onButton2Click);
+    cir3.addEventListener('click', onButton3Click);
+
+    function onButton1Click() {
+        if (!cir1.classList.contains("active")) {
+            cir2.classList.remove('active');
+            cir3.classList.remove('active');
+        }         cir1.classList.add('active');
+    }
+
+
+    function onButton2Click() {
+        if (!cir2.classList.contains("active")) {
+            cir1.classList.remove('active');
+            cir3.classList.remove('active');
+        } cir2.classList.add('active');
+        }
+    
+
+    function onButton3Click() {
+        if (!cir3.classList.contains("active")) {
+            cir2.classList.remove('active');
+            cir1.classList.remove('active');
+        } cir3.classList.add('active');
+        }
+    
+
+    // function onButtonClick() {
+    //     if (div.classList.contains("inactive")) {
+    //         circle1.classList.add('inactive')
+    //         circle2.classList.add('inactive')
+    //         circle3.classList.add('inactive')
+    //         `${buttonClicked}`.classList.add('active');
+    //                                                                 // turn other circles off and turn this one on
+    //     }
+
+    //     if (div.classList.contains("active")) {
+    //         `${div}`.classList.remove('active');
+    //         `${div}`.classList.add('inactive');
+    //     } 
+
+    // }
+</script>
+
+
+
+
+</body>
+</html>

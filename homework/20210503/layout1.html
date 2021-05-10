@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .page {
+            display: flex;
+            width: 1000px;
+            height: 700px;
+        }
+
+        .left {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .right {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .lefttop {
+            width: 600px;
+            height: 300px;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .leftbot {
+            width: 600px;
+            height: 380px;
+            background-color: darkgreen;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .righttop {
+            width: 380px;
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .rightbot {
+            width: 380px;
+            height: 480px;
+            background-color: red;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <section class="left">
+        <div class="lefttop">W 600 H 300</div>
+        <div class="leftbot">W 600 H 380</div>
+    </section>
+
+    <section class="right">
+        <div class="righttop">W 380 H 200</div>
+        <div class="rightbot">W 380 H 480</div>
+    </section>
+    </div>
+
+</body>
+</html>

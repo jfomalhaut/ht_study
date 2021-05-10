@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .page {
+            width: 1000px;
+            height: 520px;
+        }        
+
+        section {
+            display: flex;
+        }
+        header {
+            width: 1000px;
+            height: 100px;
+            background: coral;
+            margin-bottom: 20px;
+        }
+        
+        .left {
+            display: flex;
+            flex-direction: column;
+        }
+        .lefttop {
+            background: lightgreen;
+            width: 300px;
+            height: 150px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .leftbot {
+            background: green;
+            width: 300px;
+            height: 230px;
+        }
+
+        .mid {
+            background: black;
+            color: white;
+            width: 400px;
+            height: 400px;
+            margin-right: 20px;
+        }
+
+        .righttop {
+            background: skyblue;
+            width: 280px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .rightmid {
+            background: steelblue;
+            width: 280px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .rightbot {
+            background: blue;
+            width: 280px;
+            height: 120px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <header> 1000 * 100</header>
+
+    <section>
+        <div class="left">
+            <div class="lefttop">300 * 150</div>
+            <div class="leftbot">300 * 230</div>
+        </div>
+        <div class="mid">400*400</div>
+        <div class="right">
+            <div class="righttop">280*120</div>
+            <div class="rightmid">280*120</div>
+            <div class="rightbot">280*120</div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 1000px;
+            margin: 0 auto;
+            height: 700px;
+            background: yellowgreen;
+        }
+
+        .left {
+            width: 600px;
+            height: 100%;
+            margin-right: 20px;
+            float: left;
+            background: dodgerblue;
+        }
+
+        .right {
+            width: 380px;
+            height: 100%;
+            float: left;
+            background: tomato;
+        }
+
+        .lt {
+            width: 100%;
+            height: 300px;
+            background: black;
+            margin-bottom: 20px;
+        }
+
+        .lb {
+            width: 100%;
+            height: 380px;
+            background: gray;
+        }
+
+        .rt {
+            width: 100%;
+            height: 200px;
+            background: red;
+            margin-bottom: 20px;
+        }
+
+        .rb {
+            width: 100%;
+            height: 480px;
+            background: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <div class="left">
+                <div class="lt">W600 H300</div>
+                <div class="lb">W600 H380</div>
+            </div>
+            <div class="right">
+                <div class="rt">W380 H200</div>
+                <div class="rb">W380 H480</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

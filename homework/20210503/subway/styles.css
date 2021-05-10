@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+:root {
+    --whitebackground: #e5e5e5;
+}
+
+body {
+font-size: 16px;
+color: #666666;
+font-family: font_ns, sans-serif;
+}
+
+.page {
+    width: 1777px;
+    height: 2371.1px;
+}
+
+
+.hdr {
+    display: flex;
+    width: 1777px;
+    height: 165px;
+}
+
+.hdrgrnbar {
+    border-top: 5px solid #009223;
+}
+
+.logo_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 202px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hdrright {
+    display: flex;
+    
+}
+

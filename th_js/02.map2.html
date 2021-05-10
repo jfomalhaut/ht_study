@@ -1,0 +1,27 @@
+<script>
+
+    let items = [
+        {id: 1, name: 'apple', price: 1000},
+        {id: 2, name: 'banana', price: 2000},
+        {id: 3, name: 'orange', price: 3000},
+        {id: 4, name: 'kiwi', price: 4000},
+]
+
+    let items1 = items.map(item => {
+        if (item.name === "orange") {
+            return {...item, price: 5500}
+        } else {
+            return item
+        }
+    })
+
+    console.log(items1);
+
+
+    let newItems = items.map(item => {
+        if (item.name === 'orange') {
+            return
+        }
+    })
+
+</script>

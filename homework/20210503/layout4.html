@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .page {
+            width: 920px;
+            height: 700px;
+            display: flex;
+        }
+        aside {
+            background: black;
+            color: white;
+            width: 200px;
+            height: 700px;
+            margin-right: 20px;
+        }
+        .main {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .sub {
+            display: flex;
+        }
+    
+        header {
+            display: flex;;
+            width: 780px;
+            height: 200px;
+            background: brown;
+            margin-bottom: 20px;
+        }
+
+
+        .left {
+            background:purple;
+            width: 200px;
+            height: 480px;
+            margin-right: 20px;
+        }
+        .mid {
+            margin-right: 20px;
+        }
+        .midtop {
+            background: lightgreen;
+            width: 300px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .midmid {
+            background: mediumseagreen;
+            width: 300px;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+        .midbot {
+            background: green;
+            width: 300px;
+            height: 110px;
+        }
+
+        .righttop {
+            background: skyblue;
+            width: 240px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .rightbot {
+            background: blue;
+            width: 240px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <aside>200 * 700</aside>
+
+    <section class="main">
+        <header> 780 * 200</header>
+        <section class="sub">
+        <div class="left">200 * 480</div>
+
+        <div class="mid">
+            <div class="midtop">300 * 150</div>
+            <div class="midmid">300 * 180</div>
+            <div class="midbot">300 * 110</div>
+        </div>
+
+        <div class="right">
+            <div class="righttop">240 * 300</div>
+            <div class="rightbot">240 * 160</div>
+        </div>
+        </section>
+    </section>
+</div>
+</body>
+</html>

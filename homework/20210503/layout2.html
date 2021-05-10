@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .page {
+            width: 1000px;
+            height: 400;
+            display: flex;
+        }
+
+        .left {
+
+        }
+        .leftone {
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+            margin-right: 20px;
+        }
+
+
+        .right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .righttop {
+            background-color: lightgreen;
+            width: 480px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        .rightmid {
+            background: green;
+            width: 480px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        .rightbot {
+            background: black;
+            width: 480px;
+            height: 120px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="left">
+            <div class="leftone">W 500 H 400</div>
+        </div>
+        <div class="right">
+            <div class="righttop"> W 480 H 120 </div>
+            <div class="rightmid"> W 480 H 120 </div>
+            <div class="rightbot"> W 480 H 120 </div>
+        </div>
+    </div>
+</body>
+</html>
